@@ -88,7 +88,7 @@ for (let i = row_offset; i < row_count; i++) {
   // Parse the row
   let name = row[1]
   let endpoint = row[2]
-  let type = row[3] != null ? row[3].split('').map(c => types[c]) : null;
+  let args = row[3] != null ? row[3].split('').map(c => types[c]) : null;
   let value = row[4]
   if(value == 'x') {
     value = 'any' 
@@ -103,7 +103,7 @@ for (let i = row_offset; i < row_count; i++) {
   config.commands[group.name].push({
     name,
     endpoint,
-    type,
+    args,
     value,
   })
 }
