@@ -2,126 +2,202 @@ commands:
   control:
     - name: OSC Server Connected
       endpoint: /OBSBOT/WebCam/General/Connected
-      type: int32
+      args:
+        - int32
       value: any
     - name: Server Connected Reply
       endpoint: /OBSBOT/WebCam/General/ConnectedResp
-      type: int32
+      args:
+        - int32
       value: 1
     - name: OSC Server Disconnected
       endpoint: /OBSBOT/WebCam/General/Disconnected
-      type: int32
+      args:
+        - int32
       value: any
     - name: Select Device
       endpoint: /OBSBOT/WebCam/General/SelectDevice
-      type: int32
-      value: 0\1\2\3
+      args:
+        - int32
+      value:
+        - 0
+        - 1
+        - 2
+        - 3
     - name: Device Sleep\Wake
       endpoint: /OBSBOT/WebCam/General/WakeSleep
-      type: int32
-      value: 0\1
+      args:
+        - int32
+      value:
+        - 0
+        - 1
     - name: Gimbal Reset
       endpoint: /OBSBOT/WebCam/General/ResetGimbal
-      type: int32
+      args:
+        - int32
       value: any
     - name: Zoom Set
       endpoint: /OBSBOT/WebCam/General/SetZoom
-      type: int32
+      args:
+        - int32
       value: 0-100
     - name: Zoom Max
       endpoint: /OBSBOT/WebCam/General/SetZoomMax
-      type: int32
+      args:
+        - int32
       value: any
     - name: Zoom Min
       endpoint: /OBSBOT/WebCam/General/SetZoomMin
-      type: int32
+      args:
+        - int32
       value: any
     - name: Gimbal Set Up
       endpoint: /OBSBOT/WebCam/General/SetGimbalUp
-      type: int32
-      value: 0\1
+      args:
+        - int32
+      value:
+        - 0
+        - 1
     - name: Gimbal Set Down
       endpoint: /OBSBOT/WebCam/General/SetGimbalDown
-      type: int32
-      value: 0\1
+      args:
+        - int32
+      value:
+        - 0
+        - 1
     - name: Gimbal Set Left
       endpoint: /OBSBOT/WebCam/General/SetGimbalLeft
-      type: int32
-      value: 0\1
+      args:
+        - int32
+      value:
+        - 0
+        - 1
     - name: Gimbal Set Right
       endpoint: /OBSBOT/WebCam/General/SetGimbalRight
-      type: int32
-      value: 0\1
+      args:
+        - int32
+      value:
+        - 0
+        - 1
     - name: View Set
       endpoint: /OBSBOT/WebCam/General/SetView
-      type: int32
-      value: 0\1\2
+      args:
+        - int32
+      value:
+        - 0
+        - 1
+        - 2
     - name: AI Lock\Unlock
       endpoint: /OBSBOT/WebCam/General/ToggleAILock
-      type: int32
-      value: 0\1
+      args:
+        - int32
+      value:
+        - 0
+        - 1
     - name: Select Trigger Preset Position
       endpoint: /OBSBOT/WebCam/General/TriggerPreset
-      type: int32
-      value: 0\1\2
+      args:
+        - int32
+      value:
+        - 0
+        - 1
+        - 2
     - name: Virtual Background
       endpoint: /OBSBOT/WebCam/General/SetVirtualBackground
-      type: int32
-      value: 0\1\2\3
+      args:
+        - int32
+      value:
+        - 0
+        - 1
+        - 2
+        - 3
     - name: Auto Framing
       endpoint: /OBSBOT/WebCam/General/SetAutoFraming
-      type: int32
-      value: 0\1\2
+      args:
+        - int32
+      value:
+        - 0
+        - 1
+        - 2
     - name: Standard Mode
       endpoint: /OBSBOT/WebCam/General/SetStandardMode
-      type: int32
+      args:
+        - int32
       value: any
   information:
     - name: Get Device Info
       endpoint: /OBSBOT/WebCam/General/GetDeviceInfo
-      type: int32
+      args:
+        - int32
       value: any
     - name: Device Info Reply
       endpoint: /OBSBOT/WebCam/General/DeviceInfo
-      type: int32
+      args:
+        - int32
+        - string
+        - int32
+        - string
+        - int32
+        - string
+        - int32
+        - string
+        - int32
+        - int32
+        - int32
       value: null
     - name: Get Zoom Info
       endpoint: /OBSBOT/WebCam/General/GetZoomInfo
-      type: int32
+      args:
+        - int32
       value: any
     - name: Zoom Info Reply
       endpoint: /OBSBOT/WebCam/General/ZoomInfo
-      type: int32
+      args:
+        - int32
+        - int32
       value: ''
     - name: Get Ai Tracking Info
       endpoint: /OBSBOT/WebCam/General/GetAiTrackingInfo
-      type: int32
+      args:
+        - int32
       value: any
     - name: Ai Tracking Info Reply
       endpoint: /OBSBOT/WebCam/General/AiTrackingInfo
-      type: int32
+      args:
+        - int32
       value: null
     - name: Get Preset Position Info
       endpoint: /OBSBOT/WebCam/General/GetPresetPositionInfo
-      type: int32
+      args:
+        - int32
       value: any
     - name: Preset Position Info Reply
       endpoint: /OBSBOT/WebCam/General/PresetPositionInfo
-      type: int32
+      args:
+        - int32
+        - string
+        - int32
+        - string
+        - int32
+        - string
       value: null
     - name: Get Virtual Background Info
       endpoint: /OBSBOT/WebCam/General/GetVirtualBackgroundInfo
-      type: int32
+      args:
+        - int32
       value: any
     - name: Virtual Background Info Reply
       endpoint: /OBSBOT/WebCam/General/VirtualBackgroundInfo
-      type: int32
+      args:
+        - int32
       value: null
     - name: Get Auto Framing Info
       endpoint: /OBSBOT/WebCam/General/GetAutoFramingInfo
-      type: int32
+      args:
+        - int32
       value: any
     - name: Auto Framing Info Reply
       endpoint: /OBSBOT/WebCam/General/AutoFramingInfo
-      type: int32
+      args:
+        - int32
       value: null

@@ -90,8 +90,12 @@ for (let i = row_offset; i < row_count; i++) {
   let endpoint = row[2]
   let args = row[3] != null ? row[3].split('').map(c => types[c]) : null;
   let value = row[4]
-  if(value == 'x') {
-    value = 'any' 
+  if (typeof value === 'string') {
+    if(value == 'x') {
+      value = 'any'
+    } else if (value.includes('\\')) {
+      value = value.split('\\').map(Number)
+    }
   }
 
   if(!endpoint.startsWith('/')) continue
