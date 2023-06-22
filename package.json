@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "node src/index.js",
+    "build": "node src/build.js"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "osc": "^2.4.4",
+    "touchportal-api": "^3.2.1",
+    "xlsx": "^0.18.5"
+  }
+}
