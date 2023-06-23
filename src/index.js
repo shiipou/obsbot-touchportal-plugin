@@ -5,10 +5,10 @@ const pluginId = 'OBSBotController'
 const tpClient = new tp.Client(pluginId)
 
 let oscPort = new osc.UDPPort({
-    localAddress: "0.0.0.0",
+    localAddress: "127.0.0.1",
     localPort: 57121,
     remoteAddress: "127.0.0.1",
-    remotePort: 57120
+    remotePort: 16284
 })
 
 oscPort.open()
